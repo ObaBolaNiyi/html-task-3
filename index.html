@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+        body {
+            max-width: 200px;
+            margin: auto;
+            text-align: center;
+            font-family: Arial;
+            background-color: aliceblue;
+        }
+        
+        form {
+            background-color: white;
+        }
+        
+        .biodata {
+            background-color: white;
+            width: auto;
+        }
+        
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Profile Page</h2>
+    <img src="https://res.cloudinary.com/betalife-multinational-resources/image/upload/v1587071251/IMG_20200416_215308_262_a8d9f0.jpg" alt="Obawole Adeniyi Passport" style="width: 100%;">
+    <div class="biodata">
+        <p><b>Name:</b><br>Obawole Adeniyi Abolade</p>
+        <p><b>Occupation:</b><br>Social Media Marketer & Manager</p>
+        <p><b>State Of Origin:</b><br>Osun</p>
+        <p><b>Date Of Birth:</b><br>August 19, 1995</p>
+        <p><b>Address:</b><br>80, Aderemi Road, Ile-Ife</p>
+        <p><b>Home Town:</b><br>Ile-Ife</p>
+        <p><b>Slack ID:</b><br>ObaBolaNiyi</p>
+        <p><b>About Me:</b><br>I am a social media marketer who loves to work with SMEs to enhance their visibility and productivity online. I am easy-going.<br><br> When i am not busy with work, i love reading books</p>
+    </div>
+
+    <h2>Contact Form</h2>
+    <p>Kindly fill this form to get in touch with me</p>
+
+    <div class="container">
+        <form action="/action_page.php" method="POST">
+            <label for="fname"><b>First Name</b></label>
+            <input type="text" id="fname" name="first name" placeholder="Your First Name">
+            <br><br>
+            <label for="lname"><b>Last Name</b></label>
+            <input type="text" id="lname" name="last name" placeholder="Your Last Name">
+            <br><br>
+            <label for="phone"><b>Phone Number</b></label>
+            <input type="text" id="phone" name="phone number" placeholder="Your Active Phone Number">
+            <br><br>
+            <label for="message"><b>Your Message</b></label>
+            <input type="text-area" id="message" name="message" placeholder="Type your message here" style="height:auto;">
+            <br><br>
+            <input type="submit" value="Submit Details" style="background-color: tomato; color:white; height: 30px; width: 120px;">
+        </form>
+    </div>
+</body>
+
+</html>

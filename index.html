@@ -17,35 +17,63 @@
         
         form {
             background-color: white;
+            width: 200px;
+            padding: 30px;
+            margin-right: 200px;
         }
         
         .biodata {
             background-color: white;
-            width: auto;
+            width: 250px;
         }
         
         h2 {
             text-align: center;
+        }
+        
+        .contact p {
+            text-align: center;
+            padding: right;
+        }
+        
+        .container input {
+            width: auto;
+            height: 25px;
+        }
+        
+        body h2,
+        .contact h2 {
+            color: red;
         }
     </style>
 </head>
 
 <body>
     <h2>Profile Page</h2>
-    <img src="https://res.cloudinary.com/betalife-multinational-resources/image/upload/v1587071251/IMG_20200416_215308_262_a8d9f0.jpg" alt="Obawole Adeniyi Passport" style="width: 100%;">
+    <img src="https://res.cloudinary.com/betalife-multinational-resources/image/upload/v1587071251/IMG_20200416_215308_262_a8d9f0.jpg" alt="Obawole Adeniyi Passport" style="width: 150px; margin-left: 30px;">
+
     <div class="biodata">
         <p><b>Name:</b><br>Obawole Adeniyi Abolade</p>
+        <hr>
         <p><b>Occupation:</b><br>Social Media Marketer & Manager</p>
+        <hr>
         <p><b>State Of Origin:</b><br>Osun</p>
+        <hr>
         <p><b>Date Of Birth:</b><br>August 19, 1995</p>
+        <hr>
         <p><b>Address:</b><br>80, Aderemi Road, Ile-Ife</p>
+        <hr>
         <p><b>Home Town:</b><br>Ile-Ife</p>
+        <hr>
         <p><b>Slack ID:</b><br>ObaBolaNiyi</p>
+        <hr>
         <p><b>About Me:</b><br>I am a social media marketer who loves to work with SMEs to enhance their visibility and productivity online. I am easy-going.<br><br> When i am not busy with work, i love reading books</p>
     </div>
 
-    <h2>Contact Form</h2>
-    <p>Kindly fill this form to get in touch with me</p>
+    <div class="contact">
+        <h2>Contact Form</h2>
+        <p>Kindly fill this form to get in touch with me</p>
+    </div>
 
     <div class="container">
         <form action="/action_page.php" method="POST">
@@ -59,7 +87,7 @@
             <input type="text" id="phone" name="phone number" placeholder="Your Active Phone Number">
             <br><br>
             <label for="message"><b>Your Message</b></label>
-            <input type="text-area" id="message" name="message" placeholder="Type your message here" style="height:auto;">
+            <input type="text-area" id="message" name="message" placeholder="Type your message here" style="height:50px;">
             <br><br>
             <input type="submit" value="Submit Details" style="background-color: tomato; color:white; height: 30px; width: 120px;">
         </form>
